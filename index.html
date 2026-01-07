@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanskriti Singh | Software Developer</title>
+  <meta name="description" content="Advanced software developer portfolio showcasing skills, projects, and experience." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #6c63ff;
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --gray: #94a3b8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: var(--light);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+      background: rgba(2, 6, 23, 0.8);
+      backdrop-filter: blur(10px);
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 6rem 2rem;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+    }
+
+    .hero-content span {
+      color: var(--primary);
+    }
+
+    .hero-content p {
+      margin: 1rem 0 2rem;
+      color: var(--gray);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(108, 99, 255, 0.4);
+    }
+
+    /* Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 16px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    h2 {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--gray);
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* Scroll animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: 0.6s ease;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h3>Sanskriti</h3>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm <span>Sanskriti Rajiv Singh</span></h1>
+    <h3>Software Developer</h3>
+    <p>I specialize in building robust backend-driven web applications using PHP and Laravel, focusing on performance optimization, database design, and maintainable code architecture.</p>
+    <a href="#projects" class="btn">View My Work</a>
+    <a href="assets/Sanskriti_Singh_Resume.pdf" class="btn" style="margin-left:1rem; background:#22c55e;">Download Resume</a>
+  </div>
+</section>
+
+<section id="about" class="reveal">
+  <h2>About Me</h2>
+  <p>I am a Software Developer with experience in building backend-driven web applications using PHP and Laravel. I have worked on real-world projects involving authentication, CRUD operations, REST APIs, and database optimization. I focus on writing clean, scalable, and maintainable code.</p>
+</section>
+
+<section id="skills" class="reveal">
+  <h2>Technical Skills</h2>
+  <div class="grid">
+    <div class="card">PHP / Laravel</div>
+    <div class="card">JavaScript / React </div>
+    <div class="card">HTML5 / CSS3</div>
+    <div class="card">MySQL</div>
+    <div class="card">MongoDB</div>
+    <div class="card">REST APIs</div>
+    <div class="card">Git & GitHub</div>
+  </div>
+</section>
+
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="assets/images/laravel-project-1.png" alt="Laravel Project" style="width:100%; border-radius:12px; margin-bottom:1rem;">
+      <h4>Employee Management System</h4>
+      <p>Laravel-based system with authentication, role management, CRUD modules, and MySQL database.</p>
+    </div>
+    <div class="card">
+      <img src="assets/images/laravel-project-2.png" alt="Laravel Project" style="width:100%; border-radius:12px; margin-bottom:1rem;">
+      <h4>Student Management Portal</h4>
+      <p>Backend-focused Laravel application for managing students, results, and admin dashboard.</p>
+    </div>
+    <div class="card">
+      <img src="assets/images/laravel-project-3.png" alt="Laravel Project" style="width:100%; border-radius:12px; margin-bottom:1rem;">
+      <h4>REST API Backend</h4>
+      <p>Secure REST APIs built using Laravel with token-based authentication and optimized queries.</p>
+    </div>
+    <div class="card">
+     <img src="assets/images/project-js.png" alt="JavaScript Project" style="width:100%; border-radius:12px; margin-bottom:1rem;">
+     <h4>JavaScript Task Manager</h4>
+    <p>Frontend-focused project using JavaScript for task management, validation, and dynamic UI updates.</p>
+   </div>
+   <div class="card">
+    <img src="assets/images/project-php.png" alt="PHP Project" style="width:100%; border-radius:12px; margin-bottom:1rem;">
+    <h4>PHP CRUD Application</h4>
+    <p>Core PHP and MySQL based CRUD system demonstrating backend logic and database operations.</p>
+  </div>
+ </section>
+
+<section id="contact" class="reveal">
+<h2>Contact Me</h2>
+<p>Email: <a href="mailto:sanskritisingh0803@gmail.com">sanskritisingh0803@gmail.com</a></p>
+<p>
+<a href="https://www.linkedin.com/in/sanskriti-singh-b362b4279/" target="_blank">LinkedIn</a> |
+<a href="https://github.com//SansSingh0" target="_blank">GitHub</a>
+</p>
+</section>
+
+<footer>
+  <p>© 2026 Sanskriti Singh. All rights reserved.</p>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  window.addEventListener('scroll', () => {
+    reveals.forEach(r => {
+      const windowHeight = window.innerHeight;
+      const revealTop = r.getBoundingClientRect().top;
+      if (revealTop < windowHeight - 100) {
+        r.classList.add('active');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
