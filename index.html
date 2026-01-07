@@ -24,11 +24,20 @@
       font-family: 'Poppins', sans-serif;
     }
 
+    
     body {
       background: linear-gradient(135deg, #0f172a, #020617);
       color: var(--light);
       line-height: 1.6;
     }
+
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      margin: auto;
+      padding: 0 16px;
+   }
+
 
     a {
       color: var(--primary);
@@ -45,8 +54,6 @@
     }
 
     nav {
-      max-width: 1100px;
-      margin: auto;
       padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
@@ -60,8 +67,6 @@
     }
 
     section {
-      max-width: 1100px;
-      margin: auto;
       padding: 6rem 2rem;
     }
 
@@ -147,32 +152,38 @@
 
 <header>
   <nav>
-    <h3>Sanskriti</h3>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="container">
+      <h3>Sanskriti</h3>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 </header>
 
 <section class="hero">
-  <div class="hero-content">
+  <div class="container">
+    <div class="hero-content">
     <h1>Hi, I'm <span>Sanskriti Rajiv Singh</span></h1>
     <h3>Software Developer</h3>
     <p>I specialize in building robust backend-driven web applications using PHP and Laravel, focusing on performance optimization, database design, and maintainable code architecture.</p>
     <a href="#projects" class="btn">View My Work</a>
     <a href="assets/Sanskriti_Singh_Resume.pdf" class="btn" style="margin-left:1rem; background:#22c55e;">Download Resume</a>
   </div>
+  </div>
 </section>
 
 <section id="about" class="reveal">
+  <div class="container"></div>
   <h2>About Me</h2>
   <p>I am a Software Developer with experience in building backend-driven web applications using PHP and Laravel. I have worked on real-world projects involving authentication, CRUD operations, REST APIs, and database optimization. I focus on writing clean, scalable, and maintainable code.</p>
 </section>
 
 <section id="skills" class="reveal">
+  <div class="container"></div>
   <h2>Technical Skills</h2>
   <div class="grid">
     <div class="card">PHP / Laravel</div>
@@ -186,6 +197,7 @@
 </section>
 
 <section id="projects" class="reveal">
+  <div class="container"></div>
   <h2>Projects</h2>
   <div class="grid">
     <div class="card">
@@ -216,6 +228,7 @@
  </section>
 
 <section id="contact" class="reveal">
+  <div class="container"></div>
 <h2>Contact Me</h2>
 <p>Email: <a href="mailto:sanskritisingh0803@gmail.com">sanskritisingh0803@gmail.com</a></p>
 <p>
